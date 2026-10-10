@@ -124,8 +124,7 @@ $$\mathcal{J} = \mathcal{L}_{reg} + \lambda \mathcal{L}_{cls}$$
 
 where:
 **Adaptive Regression Loss:**
-$ \mathcal{L}_{reg} = \frac{1}{N} \sum_{i=1}^{N} \omega_i \cdot (y_i - \hat{y}_i)^2 $
-with $\omega_i = 1 + \tanh(|y_i - \hat{y}_i|)$
+$\mathcal{L}_{reg} = \frac{1}{N} \sum_{i=1}^{N} \omega_i \cdot (y_i - \hat{y}_i)^2$ with $\omega_i = 1 + \tanh(|y_i - \hat{y}_i|)$
 
 **Focal Loss:**
 $$ \mathcal{L}_{cls} = -\alpha(1-p_t)^\gamma \log(p_t) $$
